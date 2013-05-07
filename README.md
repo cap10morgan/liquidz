@@ -6,16 +6,22 @@
 
 * Install [Homebrew](http://mxcl.github.io/homebrew/) if you haven't already.
 * Install zsh and liquidprompt
+
     brew install zsh liquidprompt
+
 * Setup ZSH as your default shell if you haven't already.
   * Add `/usr/local/bin/zsh` to your /etc/shells file.
   * Run `chsh -s /usr/local/bin/zsh`.
 * Clone the Liquidz git repo to your home dir
+
     git clone https://github.com/cap10morgan/liquidz.git ~/.liquidz
+
 * Add this to your ~/.zshrc file:
+
     if [ -f ${HOME}/.liquidz/init.zsh ]; then
       . ${HOME}/.liquidz/init.zsh
     fi
+
 * Log out of your terminal and log back in.
 
 # Usage
